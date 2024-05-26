@@ -1,0 +1,49 @@
+baseURL = "http://tech.timrogers.io/"
+languageCode = "en-us"
+title = "Tech Blog"
+theme = "hugo-PaperMod-master"
+paginate = 10
+copyright = "© 2024 Timothy J. Rogers"
+
+[languags.en]
+languageName = "English"
+weight = 1
+
+  [languages.en.taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[languages.en.menu.main]]
+name = "Home"
+url = "http://timrogers.io"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[outputs]
+home = [ "HTML", "RSS" ]
+
+[params]
+env = "production"
+description = "Tech Blog"
+author = "Tim Rogers"
+ShowCodeCopyButtons = true
+ShowAllPagesInArchive = true
+
+[params.homeInfoParams]
+Title = "Articles"
+Content = ""
+
+[[params.socialIcons]]
+name = "github"
+title = "timothyjrogers"
+url = "https://github.com/timothyjrogers"
+
+[[params.socialIcons]]
+name = "mastodon"
+title = "hachyderm.io/@timiam"
+url = "https://hachyderm.io/@timiam"
